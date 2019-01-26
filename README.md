@@ -72,7 +72,7 @@ The notebook used to calculate this values is [Step1 Sensor Noise](./visualizati
 #### Implement a better rate gyro attitude integration scheme in the UpdateFromIMU() function. ####
 In this step, we need to include information from the IMU to the state. There is a few code provided by us there. The only thing we need to do is to integrate `pqr` from the gyroscope into the estimated pitch and roll. The implementation provided linear. The following figure illustrates the data we get with that implementation:
 
-- changes are reflected in [src/QuadEstimatorEKF.cpp#L96-L108](src/QuadEstimatorEKF.cpp#L96-L108)
+- changes are reflected in [src/QuadEstimatorEKF.cpp#L95-L99](src/QuadEstimatorEKF.cpp#L96-L108)
 
 ```
 - Comment out predictedPitch ,predictedRoll and ekfState(6) to avoid integrating yaw twice
